@@ -1,5 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import * as Automerge from "@automerge/automerge";
+
+const testAutoMerge = () => {
+  let doc = Automerge.init();
+  console.log(doc);
+};
 
 function App() {
   return (
